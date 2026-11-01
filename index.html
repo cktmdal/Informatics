@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICE 학습 페이지 메인</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+        /* 탭 메뉴 컨테이너 */
+        .tab-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            max-width: 800px;
+        }
+        /* 개별 탭 버튼 디자인 */
+        .tab-btn {
+            background-color: #ffffff;
+            color: #2980b9;
+            border: 2px solid #3498db;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        .tab-btn:hover {
+            background-color: #3498db;
+            color: #ffffff;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(52, 152, 219, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AICE 학습 페이지</h1>
+        <p>원하시는 페이지 번호 탭을 클릭하여 이동하세요.</p>
+    </header>
+
+    <div class="tab-container">
+        <a href="page1.html" class="tab-btn">Page 1</a>
+        <a href="page2.html" class="tab-btn">Page 2</a>
+        <a href="page3.html" class="tab-btn">Page 3</a>
+        <a href="page4.html" class="tab-btn">Page 4</a>
+        <a href="page5.html" class="tab-btn">Page 5</a>
+        <a href="page6.html" class="tab-btn">Page 6</a>
+        <a href="page7.html" class="tab-btn">Page 7</a>
+        <a href="page8.html" class="tab-btn">Page 8</a>
+    </div>
+
+</body>
+</html>
