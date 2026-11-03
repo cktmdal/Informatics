@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>기본 대시보드 레이아웃</title>
+    <title>AIDU - AICE JUNIOR 실기준비</title>
     <style>
         /* 초기화 및 레이아웃 기본 설정 */
         * {
@@ -193,11 +193,11 @@
 
     <!-- 왼쪽 사이드바 메뉴 -->
     <aside>
-        <div class="sidebar-header">ICE JUNIOR 실기</div>
+        <div class="sidebar-header">AICE JUNIOR 실기</div>
         <ul class="menu-container">
             
             <!-- 첫 번째 상위 메뉴 -->
-            <li class="menu-item open">
+            <li class="menu-item ">
                 <div class="menu-title">
                     <span>다운로드</span>
                     <span class="arrow">▼</span>
@@ -227,13 +227,13 @@
             <!-- 세 번째 상위 메뉴 -->
             <li class="menu-item">
                 <div class="menu-title">
-                    <span>AI 모델학습</span>
+                    <span>[분류]AI 모델학습</span>
                     <span class="arrow">▼</span>
                 </div>
                 <ul class="submenu">
                     <li><a href="#" data-target="section-settings">딥러닝 모델 학습 순서</a></li>
                     <li><a href="#" data-target="section-settings1">데이터 가공</a></li>
-                     <li><a href="#" data-target="section-settings2">딥러닝 모델 학습</a></li>
+                     <li><a href="#" data-target="section-settings2">딥러닝 학습</a></li>
                 </ul>
             </li>
 
@@ -242,16 +242,37 @@
 
             <li class="menu-item">
                 <div class="menu-title">
-                    <span>AI 모델활용</span>
+                    <span>[분류]AI 모델활용</span>
                     <span class="arrow">▼</span>
                 </div>
                 <ul class="submenu">
+                 
                     <li><a href="#" data-target="section-settings3">AI 모델활용</a></li>
-                    <li><a href="#" data-target="section-logs2">로그 기록</a></li>
+                   
+                </ul>
+            </li>
+
+
+ <!-- 회귀 -->
+
+  <li class="menu-item">
+                <div class="menu-title">
+                    <span>[회귀]모델 학습</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <ul class="submenu">
+                    <li><a href="#" data-target="section-settings4">회귀문제분석</a></li>
+                     <li><a href="#" data-target="section-settings5">딥러닝학습</a></li>
+                     <li><a href="#" data-target="section-settings6"> AI 모델학습</a></li>
+                    
+                   
                 </ul>
             </li>
 
         </ul>
+
+
+
     </aside>
 
     <!-- 오른쪽 콘텐츠 영역 -->
@@ -365,38 +386,142 @@
         <section id="section-settings" class="content-section">
             <h2>딥러닝학습순서 </h2>
              <div class="imgbox"><img src="27.png" alt=""></div>
-             <div class="imgbox"><img src="28.png" alt=""></div>
+             
         </section>
 
       <section id="section-settings1" class="content-section">
             <h2>데이터 가공 </h2>
-             <div class="imgbox"><img src="32.png" alt=""></div>
-     
-        </section>
-
-
-         <section id="section-settings2" class="content-section">
-            <div class="quiz-box">
-                <div class="textbox">📖 다음 제시된 설정으로 딥러닝 모델 학습을 하고,모델의 정확도(Accuracy)를 작성하시오<br>
+                 <div class="textbox">📖 다음 제시된 설정으로 딥러닝 모델 학습을 하고,모델의 정확도(Accuracy)를 작성하시오<br>
                 (정답은 반올림하여 소수점2자리까지 작성)</div>
-                <div class="imgbox"><img src="40.png" alt=""></div>
-                 <div class="imgbox"><img src="41.png" alt=""></div>
-                  <div class="imgbox"><img src="43.png" alt=""></div>
-                <div class="answer-area">
-                    <input type="text" id="answer1" placeholder="정답 입력">
-                    <button onclick="checkAnswer(1, '2.91')">정답 확인</button>
-                    <span id="result1" class="result-msg"></span>
-                </div>
+          
+                <div class="imgbox"><img src="4.png" alt=""></div>
+                <div class="imgbox"><img src="28.png" alt=""></div>
+             <div class="imgbox"><img src="데이터가공단계1.png" alt="">
+             <P>4개의 칼럼의 최빈값을 선택하여 데이터 가공한다</P>
             </div>
-         </section>
-
-
-     <section id="section-settings3" class="content-section">
-            <h2>AI 모델 활용 </h2>
-            <div class="imgbox"><img src="29.png" alt=""></div>
-             <div class="imgbox"><img src="36.png" alt=""></div>
+             <div class="imgbox"><img src="가공2.png" alt=""></div>
+             <div class="imgbox"><img src="가공3.png" alt="">
+            <P>데이터 가공이 완료되면 가공데이터 저장 한다</P>
+            </div>
+             
+               <div class="imgbox"><img src="가공데이터생성.png" alt="">
+                 <P>데이터 가공이 완료되면  기존 데이터와 가공데이터(sex_IM)가 보여진다</P>
+            </div>
      
         </section>
+        
+          <section id="section-settings2" class="content-section">
+            <h2>딥러닝 학습</h2>
+                 <div class="textbox"></div>
+          
+                <div class="imgbox"><img src="딥러닝1.png" alt=""></div>
+             <div class="imgbox"><img src="딥러닝2.png" alt="">
+             <P>4개의 칼럼의 최빈값을 선택하여 데이터 가공한다</P>
+            </div>
+             <div class="imgbox"><img src="딥러닝3.png" alt=""></div>
+             <div class="imgbox"><img src="딥러닝4.png" alt="">
+            <P>데이터 가공이 완료되면 가공데이터 저장 한다</P>
+            </div>
+             
+              
+     
+        </section>
+
+         <section id="section-settings3" class="content-section">
+            <h2>AI 모델활용</h2>
+                 <div class="textbox"></div>
+<!-- 문제 -->
+          <div class="simulation-box" style="border: 2px solid #ff6b4a; border-radius: 12px; padding: 20px; max-width: 700px; background-color: #fff9f8;">
+    <h3 style="color: #333; margin-top: 0; margin-bottom: 15px; font-size: 22px;">
+        시뮬레이션에 다음과 같이 변수를 입력했을 때 펭귄의 종류는?
+    </h3>
+    <ul style="list-style-type: none; padding-left: 0; margin: 0; color: #444; font-size: 15px; line-height: 1.8;">
+        <li><strong>- Body_mass_g :</strong> 5200</li>
+        <li><strong>- culmen_depth_mm :</strong> 15.3</li>
+        <li><strong>- culmen_lengh_mm :</strong> 46.7</li>
+        <li><strong>- flipper_length_mm :</strong> 219</li>
+        <li><strong>- island :</strong> <span style="color: #e65c00; font-weight: bold;">Biscoe</span></li>
+    </ul>
+</div>
+
+
+            <div class="imgbox"><img src="ai모델1.png" alt=""></div>
+            <div class="imgbox"><img src="ai모델2.png" alt=""></div>
+            <div class="imgbox"><img src="ai모델3.png" alt=""></div>
+            <div class="imgbox"><img src="ai모델완료.png" alt=""></div>   
+            </div>
+             
+              
+     
+        </section>
+
+
+
+        <!-- 회귀 분석 -->
+
+     <section id="section-settings4" class="content-section">
+            <h2>[회귀] 모델 학습</h2>
+            <div class="textbox">📖 다음 제시된 설정으로 딥러닝 모델 학습을 하고, MSE를 작성하시오(정답은 반올림하여 소수점2자리 까지 작성)
+                 <div class="answer-area">
+                    <input type="text" id="answer3" placeholder="정답 입력">
+                    <button onclick="checkAnswer(3, '0.16')">정답 확인</button>
+                    <span id="result3" class="result-msg"></span>
+                </div>
+
+            </div>
+            <div class="imgbox"><img src="회귀표.png" alt=""></div>
+            <div class="imgbox"><img src="회귀작업순서.png" alt=""></div>
+           
+        </section>
+
+        <section id="section-settings5" class="content-section">
+            <h2>[회귀] 딥러닝 학습</h2>
+            <div class="imgbox"><img src="회귀 딥러닝학습1.png" alt="">
+           
+            <P>body_mass_g_IM을 OUTPUT 컬럼으로 이동하고(독립변수), 제외컬럼에는 가공전 데이터를 이동한다.</P>
+            </div>
+            <div class="imgbox"><img src="회귀 딥러닝학습2.png" alt="">
+            <P>species, istand 는 object-> 인코더 선택을  sparse로 변경한다.</P>
+            </div>
+            <div class="imgbox"><img src="회귀딥러닝3.png" alt="">
+             <P>output칼럼을 선택하고 디코더와(regressor) 활성화 함수를(linear) 선택한다</P>
+            </div>
+            <div class="imgbox"><img src="회귀딥러닝4-1.png" alt="">
+                <P>mean_squared_error값이 0.1568...  ->0.16</P>
+                
+            </div>   
+
+            <div class="imgbox"><img src="회귀딥러닝5.png" alt="">
+             <P>모델을 다른이름 으로 저장한다.</P>
+            </div>   
+        </section>
+
+        <section id="section-settings6" class="content-section">
+            <h2>[회귀] AI 모델 활용</h2>
+            <!-- 문제 -->
+          <div class="simulation-box" style="border: 2px solid #ff6b4a; border-radius: 12px; padding: 20px; max-width: 700px; background-color: #fff9f8;">
+    <h3 style="color: #333; margin-top: 0; margin-bottom: 15px; font-size: 22px;">
+        시뮬레이션에 다음과 같이 변수를 입력했을 때 펭귄의 몸무게는?(정답은 반올림하여 소수점2자리까지 작성)
+    </h3>
+    <ul style="list-style-type: none; padding-left: 0; margin: 0; color: #444; font-size: 15px; line-height: 1.8;">
+       
+        <li><strong>- culmen_depth_mm :</strong> 15.3</li>
+        <li><strong>- culmen_lengh_mm :</strong> 46.7</li>
+        <li><strong>- flipper_length_mm :</strong> 219</li>
+        <li><strong>- island :</strong> <span style="color: #e65c00; font-weight: bold;">Dream</span></li>
+        <li><strong>- species :</strong> <span style="color: #e65c00; font-weight: bold;">Adelie</span></li>
+    </ul>
+</div>
+<div class="answer-area">
+                    <input type="text" id="answer3" placeholder="정답 입력">
+                    <button onclick="checkAnswer(3, '4527.11')">정답 확인</button>
+                    <span id="result3" class="result-msg"></span>
+                </div>
+            <div class="imgbox"><img src="회귀시뮬레이션1.png" alt=""></div>
+            <div class="imgbox"><img src="회귀시뮬레이션2.png" alt=""></div>
+        </section>
+
+       
 
     </main>
 
